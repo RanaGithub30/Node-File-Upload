@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const userController = require('../../controllers/Front/UserManageController');
+const fileController = require('../../controllers/Front/FileManageController');
 
-router.get('/', userController.index);
-router.get('/index', userController.index);
-router.post('/upload', userController.upload);
+router.get('/', fileController.index);
+router.get('/index', fileController.index);
+router.post('/upload', fileController.upload);
 
 module.exports = router;
